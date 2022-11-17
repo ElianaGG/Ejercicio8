@@ -2,12 +2,13 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Persona persona = new Persona();
 
-        persona.setEdad(29);
         persona.setNombre("Eliana");
+        System.out.println("Mi nombre es " + persona.getNombre());
+       
+        persona.setEdad(29);
+        System.out.println("Tengo " + persona.getEdad() + " años");
+        
         persona.setTelefono(351333333);
-
-        System.out.println(persona.getEdad() + " años");
-        System.out.println(persona.getNombre());
-        System.out.println(persona.getTelefono());
+        System.out.println("Mi telefono es " + persona.getTelefono());
     }
 }
